@@ -27,7 +27,7 @@ const baseUrl = "https://api-seo.cloudhost.cm";
     console.log(scr);
     const attr = scr.getAttribute('src')
     console.log(attr)
-    scr.setAttribute('src', `${attr}{${`${jsonData.project.app_key}`}}`);
+  scr.setAttribute('src', `${attr}{${jsonData.project.app_key}}`);
     console.log(src)
    
   }
