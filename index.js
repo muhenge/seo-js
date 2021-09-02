@@ -40,6 +40,10 @@ const baseUrl = "https://api-seo.cloudhost.cm";
       head.appendChild(keywords)
       head.appendChild(title)
     }
+
+    else {
+      alert('Verify key again')
+    }
   }
 
   apiCall({
