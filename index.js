@@ -15,16 +15,16 @@ const baseUrl = "https://api-seo.cloudhost.cm";
     try {
       let get_project = await fetch(apifetch, req);
       jsonData = await get_project.json();
-      console.log(jsonData.project);
+      
     } catch (error) {
-      console.log(req.message);
+      alert(req.message);
     }
 
     const test = document.querySelector('body')
     const scr = document.querySelector('script')
-    //console.log(scr)
+    
     const attr = scr.getAttribute('src')
-    console.log(attr)
+    
     console.log(attr.includes(data.app_key))
     if (attr.includes(data.app_key) === true) {
       const desc = document.createElement('meta');
@@ -45,7 +45,6 @@ const baseUrl = "https://api-seo.cloudhost.cm";
       alert('Verify key again')
     }
   }
-
   apiCall({
     app_key: 'SEO-Crypt237njRDYalYFeRFm7UBTNAp',
     domain: 'funny'
